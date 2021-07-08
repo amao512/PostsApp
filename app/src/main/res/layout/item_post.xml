@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_sixe_16x"
+    >
+
+    <ImageView
+        android:id="@+id/item_post_user_avatar_image_view"
+        android:layout_width="@dimen/user_image_medium_size"
+        android:layout_height="@dimen/user_image_medium_size"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/item_post_user_full_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_size_16x"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_16x"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/item_post_user_avatar_image_view"
+        app:layout_constraintTop_toTopOf="@id/item_post_user_avatar_image_view"
+        tools:text="User Name"
+        />
+
+    <TextView
+        android:id="@+id/item_post_date_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/item_post_user_full_name_text_view"
+        app:layout_constraintTop_toBottomOf="@id/item_post_user_full_name_text_view"
+        tools:text="08 July"
+        />
+
+    <TextView
+        android:id="@+id/item_post_content_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_size_16x"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_16x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/item_post_user_avatar_image_view"
+        app:layout_constraintTop_toBottomOf="@id/item_post_user_avatar_image_view"
+        tools:text="Сайт белорусской газеты Наша Нива был заблокирован в четверг 8 июля по требованию прокуратуры. В соцсетях издания сообщается о задержании главного редактора и нескольких сотрудников, обысках в редакции, бухгалтерии и квартирах, а также изъятии документов. Правозащитный центр “Весна” утром сообщил, что в редакции газеты находятся сотрудники Главного управления по борьбе с организованной преступностью Беларуси. Местные СМИ также пишут, что силовики пришли в редакцию “Брестской газеты” и редакцию еженедельника Intex-Press в Барановичах и задержали редактора другого местного издания, orsha.eu. В мае белорусские власти заблокировали сайт крупнейшего независимого издания страны Tut.by. Пятнадцать сотрудников издания были арестованы, включая все руководство."
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
